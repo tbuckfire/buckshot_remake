@@ -187,8 +187,10 @@ class Game:
     
     def ammo(self):
         print(f"The gun has {self.remaining_ammo} remaining shots with {self.remaining_bullets} remaining live rounds.")
+
     def health_check(self):
         print(f"{self.player1.name} Health: {self.player1.health} | {self.player2.name} Health: {self.player2.health}")
+        
     def inventory(self, player_num):
         if player_num == 1:
             print(f"{self.player1.name} has the following inventory: {self.player1.inventory}")
